@@ -1,0 +1,56 @@
+a.points {
+    border-radius: 10px;
+    color: black;
+    background: -webkit-linear-gradient(top, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+    background: -o-linear-gradient(top, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+    background: linear-gradient(to top, #A4D3E0 , #A4D3E0 50%, #CBE3EB 50%);
+    box-shadow: 2px 2px 3px black;
+	display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px 15px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+a:-webkit-any-link {
+    color: #0d2c48;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.points:hover {
+	color: #0d2c48;
+	background-color: #c6cbf1;  
+	text-decoration: underline;
+}
+
+a.points:focus {
+	color: #0d2c48;
+	background-color: #c6cbf1; 
+	text-decoration:underline;
+}
+
+nav {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	line-height: 30px;
+	padding: 10px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.table1 td {
+	background: white;
+}
+
+.table1 {
+	padding: 10px;
+}

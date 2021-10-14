@@ -1,0 +1,76 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	text-shadow: 0.5px 0.5px 0.5px white;
+	line-height: 24px;
+	color: black;
+}
+
+header {
+	font-family: Calibri, serif;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+fieldset {
+	background-color: #7c9eca9c;
+	border-color: #67E0D8;
+	border-radius: 7px;
+	margin-right: 60%;
+	color: #01325dfa;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 0.5px white;
+}
+
+fieldset.one {
+	padding-right: 150px;
+	text-align: right;
+}
+
+fieldset.two {
+	padding-right: 30px;
+	text-align: left;
+}
+
+label {
+	padding-right: 10px;
+	float: left;
+}
+
+label.form {
+	padding-right: 220px;
+	text-align: left;
+}
+legend {
+	color: #2c4b6de3;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+	font-size: 19px;
+}
+
+#pname {
+	color: #01325dfa;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 0.5px white;
+}
+
+.submit {
+	color: #01325dfa;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 0.5px white;
+	border-color: #01325dfa;
+	border-radius: 4px;
+	padding: 6px 10px;
+	background-color: #7c9eca9c;
+}
+
+footer {
+	background-color: #cadbe2e6;
+	color: #2a5f89d4;
+	background-color: #cadbe2e6;
+	text-align: center;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}

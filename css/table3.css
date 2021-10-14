@@ -1,0 +1,86 @@
+.table1 {
+	font-size: 16px;
+	font-family: Calibri, san-serif;
+	font-weight: bold;
+	line-height: 30px;
+	padding: 20px;
+	text-align: center;
+	border-collapse: collapse;
+	color: #2e2d2e;
+}
+
+.table1 thead th {
+	background-color: #222222;
+	color: white;
+	padding: 10px;
+}
+
+.table1 thead th.first {
+	border: none;
+	background: transparent;
+}
+
+.table1 thead th.second {
+	border-right: 2px solid #161718;
+}
+
+.table1 thead th.third {
+	border-right: 2px solid #161718;
+}
+
+.table1 thead th.fourth {
+	border-right: 2px solid #161718;
+}
+
+.table1 tbody td.fcol {
+	border-right: 2px solid #d4d4d4;
+}
+
+.table1 tbody td.scol1 {
+	border-right: 2px solid #d4d4d4;
+}
+
+.table1 tbody th {
+	color: #2e2d2e;
+	text-align: right;
+	background-color: #f9f9f9;
+}
+
+.table1 tbody td {
+	padding: 10px;
+	background-color: #f0f0f0;
+}
+
+.table1 tbody td.upp {
+	text-transform: uppercase;
+}
+
+.table1 tfoot th {
+	color: #838383;
+	text-transform: uppercase;
+}
+
+.table1 tfoot td.ftd {
+	border-right: 2px solid #161718;
+}
+
+.table1 tfoot td.std {
+	border-right: 2px solid #161718;
+}
+
+.table1 tfoot td.ttd {
+	border-right: 2px solid #161718;
+}
+
+.table1 tfoot td {
+	font-size: 32px;
+	background-color: #222222;
+	color: #e88310;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.table1 span.check {
+	color: #84d10d;
+	font-size: 2em;
+}

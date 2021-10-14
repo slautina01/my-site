@@ -1,0 +1,126 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	line-height: 24px;
+	color: #01325dfa;
+	font-weight: bold;
+	text-shadow: 0.3px 0.3px 0.3px white;
+}
+
+
+td {
+	padding: 10px;
+	width: 140px;
+	background-color: white;
+}
+
+td.foto {
+	width: 200px;
+	background-color: white;
+}
+
+button {
+    color: #01325dfa;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-shadow: 0.5px 0.5px 0.5px white;
+	border-color: #01325dfa;
+	border-radius: 4px;
+	width: 30px;
+	height: 30px;
+	background-color: #a4d3e0;	
+}
+
+#fixx {
+	pozition: fixed;
+	float: right;
+	
+}
+
+#anketa {
+	float: right;
+	width: 40%;
+}
+
+#catalog {
+	float: left;
+	width: 50%;
+}
+
+fieldset {
+	background-color: #a4d3e0;
+	color: #01325dfa;
+	border-color: #a4d3e0;
+	border-radius: 7px;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 0.5px white;
+}
+
+fieldset.one {
+	padding-right: 150px;
+	text-align: right;
+}
+
+fieldset.two {
+	padding-right: 30px;
+	text-align: left;
+}
+
+label {
+	padding-right: 10px;
+	float: left;
+}
+
+label.form {
+	padding-right: 220px;
+	text-align: left;
+}
+
+legend {
+	color: #2c4b6de3;
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+}
+
+
+.submit {
+	color: #01325dfa;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px 0.5px white;
+	border-color: #01325dfa;
+	border-radius: 4px;
+	padding: 6px 10px;
+	background-color: #a4d3e0;
+}
+
+textarea {
+	resize: none;
+}
+
+.itogo {
+	text-decoration: underline;
+}
+
+td.fon {
+	background-image: url("../img/ice.jpg");
+	background-size: 330px 250px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+a {
+	color: #2c4b6de3;
+	text-shadow: 0.5px 0.5px 0.5px white; 
+}
+
+a:hover {
+	color: #0d2c48;
+	text-decoration: underline;
+}
+
+a:focus {
+	color: #0d2c48;
+	background-color: #a4d3e0; 
+	text-decoration:underline;
+}

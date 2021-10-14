@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+	background-image: url("../../img/ice.png");
+	background-repeat: no-repeat;
+	background-position: bottom center fixed;
+	background-size: 100%;
+}
+
+fieldset.one {
+	border-color: #67E0D8;
+	border-radius: 7px;
+	background-color: AntiqueWhite;
+	padding-right: 150px;
+	text-align: right;
+	margin-right: 60%;
+}
+
+fieldset.two {
+	border-color: #67E0D8;
+	border-radius: 7px;
+	background-color: AntiqueWhite;
+	padding-right: 150px;
+	text-align: right;
+	margin-right: 60%;
+}
+
+fieldset.three {
+	border-color: #67E0D8;
+	border-radius: 7px;
+	background-color: AntiqueWhite;
+	padding-right: 150px;
+	text-align: left;
+	margin-right: 60%;
+}
+
+label {
+	padding-right: 10px;
+	float: left;
+}
+
+label.1 {
+	padding-right: 220px;
+	text-align: left;
+}
+legend {
+	color: #67E0D8;
+}
+
+.submit {
+	color: #925526;
+	border-color: #67E0D8;
+	border-radius: 4px;
+	padding: 6px 10px;
+	background: -moz-linear-gradient(top, AntiqueWhite, #67E0D8);
+	font-style: bold;
+	font-family: Constantia, serif;
+}
