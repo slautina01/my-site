@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Каталог
+		</title>
+		<link rel="stylesheet" href="../../css/catalog.css">
+	</head>
+	<div>
+		<p>
+			Здесь Вы можете приобрести эксклюзивные товары с авторскими рисунками. Просто выберите понравившиеся Вам сувениры в каталоге слева и заполните контактную информацию в анкете справа!
+		<script>
+			function plus(n) {
+				var cena=document.getElementById("cena_"+n);
+				var col=document.getElementById("col_"+n);
+				var cenap=document.getElementById("cenap_"+n);
+				var itog=document.getElementById("itog");
+ 
+				col.innerHTML=1+Number(col.innerHTML);
+				cenap.innerHTML=Number(cenap.innerHTML)+Number(cena.innerHTML);
+				itog.innerHTML=Number(itog.innerHTML)+Number(cena.innerHTML);
+				}
+			function minus(n) {
+				var cena=document.getElementById("cena_"+n);
+				var col=document.getElementById("col_"+n);
+				var cenap=document.getElementById("cenap_"+n);
+				var itog=document.getElementById("itog");
+ 
+				if(col.innerHTML!="0") {
+					col.innerHTML=Number(col.innerHTML)-1;
+					cenap.innerHTML=Number(cenap.innerHTML)-Number(cena.innerHTML);
+					itog.innerHTML=Number(itog.innerHTML)-Number(cena.innerHTML);
+				}
+			}
+		</script>
+		<body>
+			<div id='catalog'>
+				<table border=1>
+					<tr>
+						<td align="center">
+							Фото товара
+						</td>
+						<td align="center">
+							Цена за 1шт
+						</td>
+						<td align="center">
+							Количество
+						</td>
+						<td align="center">
+							Цена за все
+						</td>
+					</tr>
+					<tr>
+						<td class='foto' align="center">
+							<img src='../../img/cup_pin.jpg' width='220px' height='160'>
+							<figcaption>
+								<a href='../../img/cup_pin.jpg' target='_blank'>
+									Кружка "Пингвин нарисованный", 350 мл
+								</a>
+							</figcaption>
+						</td>
+						<td align="center">
+							<b id="cena_1">250</b> руб.
+						</td>
+						<td align="center">
+							<b onclick="plus(1)"><button type="submit">+</button></b> <b id="col_1">0</b> шт. <b onclick="minus(1)"><button type="submit">-</button></b>
+						</td>
+						<td class='fon' align="center">
+							<b id="cenap_1">0</b> руб.
+						</td>
+					</tr>
+					<tr>
+						<td class='foto' align="center">
+							<img src='../../img/cup_pin_sleep.jpg' width='220px' height='160'>
+							<figcaption>
+								<a href='../../img/cup_pin_sleep.jpg' target='_blank'>
+									Кружка "Пингвин маленький, пушистый", 350 мл
+								</a>
+							</figcaption>
+						</td>
+						<td align="center">
+							<b id="cena_2">250</b> руб.
+						</td>
+						<td align="center">
+							<b onclick="plus(2)"><button type="submit">+</button></b> <b id="col_2">0</b> шт. <b onclick="minus(2)"><button type="submit">-</button></b>
+						</td>
+						<td class='fon' align="center">
+							<b id="cenap_2">0</b> руб.
+						</td>
+					</tr>
+					<tr>
+						<td class='foto' align="center">
+							<img src='../../img/t_shirt_save.jpg' width='190px' height='265'>
+							<figcaption><a href='../../img/t_shirt_save.jpg' target='_blank'>Футболка "Save penguins, save the Earth", размер XL универсальный, цв. "Черный"</a></figcaption>
+						</td>
+						<td align="center">
+							<b id="cena_3">650</b> руб.
+						</td>
+						<td align="center">
+							<b onclick="plus(3)"><button type="submit">+</button></b> <b id="col_3">0</b> шт. <b onclick="minus(3)"><button type="submit">-</button></b>
+						</td>
+						<td class='fon' align="center">
+							<b id="cenap_3">0</b> руб.
+						</td>
+					</tr>
+					<tr>
+						<td class='foto' align="center">
+							<img src='../../img/wt_snow.jpg' width='230' height='265'>
+							<figcaption><a href='../../img/wt_snow.jpg' target='_blank'>Футболка "Future great bird", размер XL универсальный, цв. "Белый"</a></figcaption>
+						</td>
+						<td align="center">
+							<b id="cena_4">650</b> руб.
+						</td>
+						<td align="center">
+							<b onclick="plus(4)"><button type="submit">+</button></b> <b id="col_4">0</b> шт. <b onclick="minus(4)"><button type="submit">-</button></b>
+						</td>
+						<td class='fon' align="center">
+							<b id="cenap_4">0</b> руб.
+						</td>
+					</tr>
+					<tr>
+						<td class='foto' align="center">
+							<img src='../../img/pen.png' width='220px' height='195'>
+							<figcaption><a href='../../img/pen.png' target='_blank'>Ручка черная, перьевая "How can we even live without penguins?"</a></figcaption>
+						</td>
+						<td align="center">
+							<b id="cena_5">50</b> руб.
+						</td>
+						<td align="center">
+							<b onclick="plus(5)"><button type="submit">+</button></b> <b id="col_5">0</b> шт. <b onclick="minus(5)"><button type="submit">-</button></b>
+						</td>
+						<td class='fon' align="center">
+							<b id="cenap_5">0</b> руб.
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id='anketa'>
+				<form  action="http://g06u33.nn2000.info/cgi-bin/form_action.py"  method='get' target='_blank'>
+					<fieldset class='one'>
+						<legend>
+							Контактная информация
+						</legend>
+						<p>
+							<label>
+								Имя
+							</label>
+							<input type='Text' name='last_name' size='30'>
+						</p>
+						<p>
+							<label>
+								Телефон
+							</label>
+							<input type='Text' name='last_name' size='30'>
+						</p>
+						<p>
+							<label>
+								Email
+							</label>
+							<input type='Text' name='last_name' size='30'>
+						</p>
+					</fieldset>
+					<fieldset class='two'>
+						<legend>
+							Информация о заказе
+						</legend>
+						<p>
+							<label>
+								Наша компания активно поддерживает Фонд защиты диких пингвинов, перечисляя туда 30% от каждой покупки. Хотите поддержать этот проект?
+							</label>
+							<input type="radio" name="support" value='Нет'>
+							Нет
+							<input type="radio" name="support" value='Да'>
+							Да
+						</p>
+						<p>
+							<label>
+								Сколько денег от внесенной Вами суммы будет туда перечислено?
+							</label>
+							<input type="Number" name="number" min='1' max='5000000' step='1' size='30'>
+						</p>
+						<p>
+							<label>
+								Выберите типа оплаты
+							</label>
+							<select name="condition" align='left'>
+								<OPTION value="онлайн">Онлайн-оплата</OPTION> 
+								<OPTION value="картой при получении">Оплата картой при получении</OPTION> 
+								<OPTION value="наличными при получении">Оплата наличными при получении</OPTION>
+							</select>
+						</p>
+						<p>
+							<label class='info'>
+								Укажите, пожалуйста, Ваш адрес по образцу (Россия, г. Нижний Новгород, ул. Львовская, 1б)
+							</label>
+							<TEXTAREA name="info" rows=3 cols=55 align='center'></TEXTAREA>
+						</p>	
+						<p>
+							<label>
+								Подтвердите, пожалуйста, сумму покупки (введите значение "ИТОГО")
+							</label>
+							<br>
+							<input class='itogo' type='text' name="itogo"> 
+								ИТОГО:<b id="itog">0</b> руб.
+							</input>
+						</p>
+					</fieldset>
+					<p>Название файла: <input type="Техт" name="000_file_name" value="g06u33.txt" >
+						<br>Тип записи в файл:<select name="010_mode">
+							<OPTION value="a">a - дозаписать в файл</OPTION> 
+							<OPTION value="w">w - очисить файл и записать в файл</OPTION> 
+							</select>
+						 <input type="hidden" name="function" value="page">
+						<input type="hidden" name="page_id" value="3"></p>
+						<p> 	
+							<a href='http://g06u33.nn2000.info/tmp/g06u33.txt' target='_blank'>Просмотреть данные</a>
+							<br>
+							<input class='submit' type="Reset"  name="Reset" value="Обновить">
+						<input class='submit' type="Submit" name="submit" value="Отправить">
+					</p>
+				</form>
+			</div>
+		</div>
+	</body>
+</HTML>

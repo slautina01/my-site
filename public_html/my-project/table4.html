@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>A+</title>
+		<!--
+		<link rel="stylesheet" href="../../css/table2.css">
+		-->
+	</head>
+	<script>
+		function plus(n) {
+			var cena=document.getElementById("cena_"+n);
+			var col=document.getElementById("col_"+n);
+			var cenap=document.getElementById("cenap_"+n);
+			var itog=document.getElementById("itog");
+		
+			col.innerHTML=1+Number(col.innerHTML);
+			cenap.innerHTML=Number(cenap.innerHTML)+Number(cena.innerHTML);
+			itog.innerHTML=Number(itog.innerHTML)+Number(cena.innerHTML);
+		}
+
+		function minus(n) {
+			var cena=document.getElementById("cena_"+n);
+			var col=document.getElementById("col_"+n);
+			var cenap=document.getElementById("cenap_"+n);
+			var itog=document.getElementById("itog");
+
+			if(col.innerHTML!="0") {
+				col.innerHTML=Number(col.innerHTML)-1;
+				cenap.innerHTML=Number(cenap.innerHTML)-Number(cena.innerHTML);
+				itog.innerHTML=Number(itog.innerHTML)-Number(cena.innerHTML);
+			}
+		}
+	</script>
+	<body>
+		<table width='70%' border=1>
+			<tr>
+				<td align="center">
+					ТОВАР
+				</td>
+				<td align="center">
+					ЦЕНА ЗА 1шт
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					IPhone XI
+				</td>
+				<td align="center">
+					<b id="cena_1">100000</b> руб.
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					Google Pixel
+				</td>
+				<td align="center">
+					<b id="cena_2">50000</b> руб.
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					LG G5
+				</td>
+				<td align="center">
+					<b id="cena_3">20000</b> руб.
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+		</table>
+		ИТОГО:<b id="itog">0</b> руб.
+	</body>
+</html>

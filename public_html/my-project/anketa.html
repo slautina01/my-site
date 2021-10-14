@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel='stylesheet' href='../../css/anketa.css'>
+		<meta http-equiv='content-type' content='text/html'  charset='utf-8'>
+		<title>А Вы видели пингвина?</title>
+	</head>
+	<body>
+		<h1>Эти дивные птицы разбросаны по всему миру. Грустные, одинокие, они бродят в надежде найти свой дом. А Вы видели пингвина? Давайте поможем ему вместе!</h1>
+		<form  action="http://g03u55.nn2000.info/cgi-bin/form_action.py"  method='get' target='_self'>
+			<fieldset class='one'>
+				<legend>
+					Контактная информация
+				</legend>
+				<p>
+					<label>
+						Имя
+					</label>
+					<input type='Text' name='last_name' size='30'>
+				</p>
+				<p>
+					<label>
+						Телефон
+					</label>
+					<input type='Text' name='last_name' size='30'>
+				</p>
+				<p>
+					<label>
+						Email
+					</label>
+					<input type='Text' name='last_name' size='30'>
+				</p>
+			</fieldset>
+			<fieldset class='two'>
+				<legend>
+					Информация о потерявшихся
+				</legend>
+				<p>
+					<label>
+						Сколько пингвинов Вы видели?
+					</label>
+					<input type="Number" name="number" min='1' max='100' step='1' size='30'>
+				</p>
+				<p>
+					<label>
+						В каком состоянии он(и) были?
+					</label>
+					<select name="condition" align='left'>
+						<OPTION value="спокойное">Спокойное</OPTION> 
+						<OPTION value="унылое">Унылое</OPTION> 
+						<OPTION value="игривое">Игривое</OPTION>
+						<OPTION value="агрессивное">Агрессивное</OPTION>
+					</select>
+				</p>
+				<p>
+					<label class='1'>
+						Укажите, пожалуйста, адрес места проишествия по образцу (Россия, г. Нижний Новгород, ул. Львовская, 1б)
+					</label>
+					<TEXTAREA name="info" rows=3 cols=23></TEXTAREA>
+				</p>	
+			</fieldset>
+			<fieldset class='three'>
+				<legend>
+					Оценка нашего заведения
+				</legend>
+				<p>
+					<label>
+						<b>
+							Почему Вы выбрали наше заведение?
+						</b>
+					</label>
+					<br>
+					<input type="Radio" name="reason" value="near">Недалеко от дома/работы
+					<br>
+					<input type="Radio" name="reason" value="advert">Увидел рекламу
+					<br>
+					<input type="Radio" name="reason" value="advice">Посоветовали
+					<br>
+					<input type="Radio" name="reason" value="optimum">Оптимальное соотношение цены и качества
+				</p>
+				<p>
+					<label>
+						<b>
+							Вы будете рекомендовать наше заведение своим знакомым?
+						</b>
+						<br>
+						<input type="Radio" name="choice" value="yes">Да
+						<br>
+						<input type="Radio" name="choice" value="no">Нет
+					</label>
+				</p>
+			</fieldset>
+			<p>
+				Название файла: 
+				<input type="Техт" name="000_file_name" value="g03u55.txt" >
+				<br>
+				Тип записи в файл:
+				<select name="010_mode">
+					<OPTION value="a">a - дозаписать в файл</OPTION> 
+					<OPTION value="w">w - очистить файл и записать в файл</OPTION> 
+				</select>
+				<input type="hidden" name="function" value="page">
+				<input type="hidden" name="page_id" value="3">
+			</p>
+			<p> 
+				<input class='submit' type="Submit" name="submit" value="Отправить">
+			</p>
+		</form>
+	</body>
+</html>
+
+<!-- 
